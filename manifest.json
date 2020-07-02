@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "Amazon Boost",
+    "description": "Amazon boost by joshua-afk",
+    "version": "0.0.1",
+    "icons": {
+        "128": "icon_128.jpg"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "popup.js"
+            ]
+        }
+    ],
+    "browser_action": {
+        "default_icon": "icon.jpg",
+        "default_popup": "popup.html",
+        "default_title": "Amazon Boost"
+    },
+    "permissions": [
+        "activeTab"
+    ]
+}
